@@ -18,13 +18,16 @@ func Median(in []int) int {
 
 	//find the mid point
 	mid := len(in) / 2
-	//12345
-	//5/2 = 2.5
-	//fmt.Printf("\nMid is [%d]", mid)
+
+	//example 12345
+	//length 5/2 = 2.5 this will round down to 2, which is the correct index
+	//index: 0 1 2 3 4
+	//value: 1 2 3 4 5
+	//answer is 3
 
 	//if theres an even number of elements then find mid value between the 2 middle values
-	//13
-	//2/2 = 1
+	//example 13
+	//length 2/2 = 1
 	//median = (1+3) /2 = 2
 
 	if len(in)%2 == 0 {
