@@ -72,4 +72,10 @@ func main() {
 	fmt.Printf("\nBinary Search should find at index 7 [%v]", BinarySearch([]int{-6, 0, 1, 2, 5, 6, 8, 9}, 9))
 	fmt.Printf("\nBinary Search should not find [%v]", BinarySearch([]int{-6, 0, 1, 2, 5, 6, 8, 9}, -10))
 
+	fmt.Printf("\nMedian should be 3 [%v]", Median([]int{1, 2, 3, 4, 5}))
+	fmt.Printf("\nMedian should be 3 [%v]", Median([]int{5, 2, 1, 4, 3}))
+	fmt.Printf("\nMedian should be 1 [%v]", Median([]int{1}))
+	fmt.Printf("\nMedian should be 2 [%v]", Median([]int{1, 3}))
+	fmt.Printf("\nMedian should be 4 [%v]", Median([]int{1, 2, 3, 4, 5, 6, 7, 8}))
+
 }
