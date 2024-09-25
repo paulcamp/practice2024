@@ -78,4 +78,7 @@ func main() {
 	fmt.Printf("\nMedian should be 2 [%v]", Median([]int{1, 3}))
 	fmt.Printf("\nMedian should be 4 [%v]", Median([]int{1, 2, 3, 4, 5, 6, 7, 8}))
 
+	fmt.Printf("\nAddNumbers 12 should be 3 [%v]", addNumbers(12))
+	fmt.Printf("\nAddNumbers 1234 should be 10 [%v]", addNumbers(1234))
+
 }
