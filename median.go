@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"sort"
 )
 
@@ -21,10 +20,12 @@ func Median(in []int) int {
 	mid := len(in) / 2
 	//12345
 	//5/2 = 2.5
-	fmt.Printf("\nMid is [%d]", mid)
+	//fmt.Printf("\nMid is [%d]", mid)
 
-	//1234
-	//4/2 = 2  not sure what answer should be...
+	//if theres an even number of elements then find mid value between the 2 middle values
+	//13
+	//2/2 = 1
+	//median = (1+3) /2 = 2
 
 	if len(in)%2 == 0 {
 		median := (in[mid-1] + in[mid]) / 2
@@ -32,6 +33,5 @@ func Median(in []int) int {
 	}
 
 	return in[mid]
-	//if theres an even number of elements then find mid value between the 2 middle values
 
 }
