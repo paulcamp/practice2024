@@ -41,17 +41,6 @@ func IsPalindrome(s string) bool {
 
 }
 
-// func palindromev2(str string) bool {
-// 	lastIdx := len(str) - 1
-
-// 	for i := 0; i < lastIdx/2 && i < (lastIdx-i); i++ {
-// 		if str[i] != str[lastIdx-i] {
-// 			return false
-// 		}
-// 	}
-// 	return true
-// }
-
 func palindrome(input string) bool {
 	for i := 0; i < len(input)/2; i++ {
 		if input[i] != input[len(input)-i-1] {
